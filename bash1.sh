@@ -16,3 +16,5 @@ docker run username/hello-world:latest
 docker login
 docker tag username/hello-world:latest username/hello-world:latest
 docker push username/hello-world:latest
+docker images
+
