@@ -38,4 +38,5 @@ services:
     restart: always
 */
 docker-compose up --build
-docker 
+docker ps
+curl https://localhost:5000
