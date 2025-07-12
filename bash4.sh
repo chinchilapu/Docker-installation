@@ -154,8 +154,6 @@ curl https://localhost:8080 (or) paste it at browser("https://localhost:8080")
 docker-compose down --volumes --remove-orphans
 docker-compose --build -d
 
-Option 1: Stop the Process Using Port 8080
-Find what's using port 8080:
 
 #if port is already allocated for another container
 netstat -ano | grep 8080
