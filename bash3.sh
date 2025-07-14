@@ -147,7 +147,7 @@ services:
 "
 docker-compose up --build -d
 docker ps -a #check if port number is visible for the file created
-curl https://localhost:8080 (or) paste it at browser("https://localhost:8080") 
+curl http://localhost:8080 (or) paste it at browser("http://localhost:8080") 
 
 
 #if any error occurs
