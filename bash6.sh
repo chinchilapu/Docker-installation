@@ -142,11 +142,35 @@ services:
   web:
   build: .
   ports:
-    - "8080:80"
+    - "5000:80"
   restart:always
 "
 docker-compose up --build -d
-docker ps -a #check if port number is visible for the file created
-curl http://localhost:8080 (or) paste it at browser("http://localhost:8080") 
+
+docker run -d -p 5000:5000 --name hello-dock registry:2
+docker tag html-css localhost:5000/html-css
+docker push localhost:5000/html-css
+curl http://localhost:5000/v2/_catalog
+
+docker run -d -p 5001:80 locahost:5000/html-css
+curl http://locahost:5001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
